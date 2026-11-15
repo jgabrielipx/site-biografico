@@ -25,7 +25,13 @@ nav a{text-decoration:none;color:var(--muted);transition:color .2s}
 nav a:hover{color:var(--accent)}
 .tema{background:none;border:1px solid var(--line);color:var(--text);width:2.4rem;height:2.4rem;border-radius:50%;font-size:1.1rem;cursor:pointer;transition:border-color .2s,transform .3s}
 .tema:hover{border-color:var(--accent);transform:rotate(180deg)}
-@media(max-width:720px){nav{display:none}}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);width:2.4rem;height:2.4rem;border-radius:50%;font-size:1.1rem;cursor:pointer}
+@media(max-width:720px){
+  .menu{display:block}
+  nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:.5rem clamp(1rem,5vw,4rem)}
+  nav.aberto{display:flex}
+  nav a{padding:.8rem 0;font-size:1.05rem}
+}
 
 /* ---------- Seções ---------- */
 section{max-width:68rem;margin:0 auto;padding:6rem clamp(1rem,5vw,4rem) 2rem}
@@ -78,6 +84,7 @@ h1 span{display:block}
 .grupos li{padding:.25rem .8rem;border:1px solid var(--line);border-radius:2rem;font:600 .9rem var(--display)}
 
 /* ---------- Projetos ---------- */
+.intro-projetos{margin:-1.2rem 0 2rem}
 .projetos{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.5rem}
 .projeto{background:var(--surface);border:1px solid var(--line);border-radius:.6rem;padding:1.6rem;display:flex;flex-direction:column;transition:border-color .2s,transform .2s}
 .projeto:hover{border-color:var(--accent);transform:translateY(-4px)}

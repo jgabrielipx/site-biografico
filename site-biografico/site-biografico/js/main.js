@@ -5,6 +5,17 @@ document.getElementById('tema').addEventListener('click', () => {
   localStorage.setItem('tema', novo);
 });
 
+// Menu do celular
+const menu = document.getElementById('menu');
+const nav = document.querySelector('nav');
+menu.addEventListener('click', () => {
+  const aberto = nav.classList.toggle('aberto');
+  menu.setAttribute('aria-expanded', aberto);
+});
+nav.addEventListener('click', e => {
+  if (e.target.tagName === 'A') { nav.classList.remove('aberto'); menu.setAttribute('aria-expanded', 'false'); }
+});
+
 // Habilidades
 document.getElementById('lista-habilidades').innerHTML = habilidades.map(g => `
   <div><h3>${g.grupo}</h3><ul>${g.itens.map(i => `<li>${i}</li>`).join('')}</ul></div>`).join('');

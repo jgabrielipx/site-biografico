@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>João Gabriel Fernandes Nóbrega | Estudante de Engenharia de Software</title>
-  <meta name="description" content="Biografia e portfólio de Seu Nome, estudante de Engenharia de Software em Brasília.">
+  <meta name="description" content="Biografia e portfólio de João Gabriel Fernandes Nóbrega, estudante de Engenharia de Software em Brasília.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -21,6 +21,7 @@
       <a href="#projetos">Projetos</a>
       <a href="#contatos">Contatos</a>
     </nav>
+    <button id="menu" class="menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
     <button id="tema" class="tema" aria-label="Alternar entre modo escuro e claro">◐</button>
   </header>
 
@@ -30,14 +31,14 @@
       <div class="hero-texto">
         <p class="kicker">Estudante de Engenharia de Software · Brasília</p>
         <h1>Olá, eu sou <span>o João</span>.</h1>
-        <p class="lead">Comecei a cursar Engenharia de Software em 2026 na UDF e estou muito ansioso para a conclusão e para realizar os meus sonhos como engenheiro.</p>
+        <p class="lead">Estudante de Engenharia de Software na UDF desde 2026, em busca do meu primeiro estágio em TI. Estou ansioso para concluir a graduação e construir minha carreira como engenheiro.</p>
         <div class="botoes">
           <a class="btn primario" href="#sobre">Conhecer minha história</a>
           <a class="btn" href="#projetos">Ver projetos</a>
         </div>
       </div>
       <figure class="arco">
-        <img src="img/biografia.jpg" alt="Foto de Seu Nome" onerror="this.remove()">
+        <img src="img/biografia.jpg" alt="Foto de João Gabriel Fernandes Nóbrega" onerror="this.remove()">
         <span class="arco-iniciais" aria-hidden="true"></span>
       </figure>
     </section>
@@ -57,7 +58,7 @@ Aprendi que o medo não deve nos impedir de tentar e que, com dedicação e pers
       </div>
       <div class="lateral">
         <h3>Interesses</h3>
-        <ul><li>Programação</li><li>Minha independência finaceira.</li><li>Realizar os meus sonhos.</li></ul>
+        <ul><li>Programação</li><li>Minha independência financeira.</li><li>Realizar os meus sonhos.</li></ul>
         <h3>Objetivos</h3>
         <ul><li>Conseguir meu primeiro estágio em TI</li><li>Concluir a graduação em 2029</li></ul>
       </div>
@@ -68,19 +69,19 @@ Aprendi que o medo não deve nos impedir de tentar e que, com dedicação e pers
       <h2>Formação</h2>
       <ol class="linha-tempo">
         <li>
-          <time>2025 – 2029 (previsão)</time>
+          <time>2026 – 2029 (previsão)</time>
           <h3>Bacharelado em Engenharia de Software</h3>
           <p>Universidade do Distrito Federal (UDF), Brasília. Atualmente no 2º semestre, com conclusão prevista para dezembro de 2029.</p>
         </li>
         <li>
-          <time>Concluído em dezembro de 2025</time>
+          <time>02/2023 – 12/2025 · Concluído</time>
           <h3>Ensino Médio</h3>
           <p>Formado no colégio Rogacionista.</p>
         </li>
         <li>
           <time>Em andamento</time>
           <h3>Idiomas</h3>
-          <p>Inglês em nível básico.</p>
+          <p>Inglês e espanhol em nível básico.</p>
         </li>
       </ol>
     </section>
@@ -93,19 +94,24 @@ Aprendi que o medo não deve nos impedir de tentar e que, com dedicação e pers
 
     <section id="projetos">
       <h2>Projetos</h2>
+      <p class="lead intro-projetos">Alguns dos meus projetos estão aqui. Os outros, e o código de todos eles, ficam no meu GitHub.</p>
       <div id="lista-projetos" class="projetos"></div>
+      <div class="botoes">
+        <a class="btn primario" href="https://github.com/jgabrielipx?tab=repositories" target="_blank" rel="noopener">Ver todos os projetos no GitHub →</a>
+      </div>
     </section>
 
     <section id="contatos">
       <h2>Contatos</h2>
       <div class="botoes">
-        <a class="btn primario" href="mailto:bieljoaoosoares@gmail,com">bieljoaosoares@gmail.com</a>
+        <a class="btn primario" href="docs/Curriculo.pdf" download>Baixar currículo (PDF)</a>
+        <a class="btn" href="mailto:bieljoaosoares@gmail.com">bieljoaosoares@gmail.com</a>
         <a class="btn" href="https://github.com/jgabrielipx" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-fernandes-n%C3%B3brega-6a3601283/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </section>
   </main>
-  <footer class="rodape">© <span id="ano"></span> João Gabriel Fernadnes Nóbrega. Feito à mão com HTML, CSS e JavaScript.</footer>
+  <footer class="rodape">© <span id="ano"></span> João Gabriel Fernandes Nóbrega. Feito à mão com HTML, CSS e JavaScript.</footer>
 
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
