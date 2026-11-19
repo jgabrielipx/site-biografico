@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João Gabriel Fernandes Nóbrega | Estudante de Engenharia de Software</title>
+  <meta name="description" content="Biografia e portfólio de João Gabriel Fernandes Nóbrega, estudante de Engenharia de Software em Brasília.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f1724'/><text x='50' y='66' font-size='48' font-weight='800' text-anchor='middle' fill='%23f2b705' font-family='sans-serif'>JN</text></svg>">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="João Gabriel Fernandes Nóbrega | Engenharia de Software">
+  <meta property="og:description" content="Estudante de Engenharia de Software em busca de estágio. Biografia e projetos.">
+  <meta property="og:image" content="https://jgabrielipx.github.io/site-biografico/img/biografia.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.dataset.theme = localStorage.getItem('tema') || 'dark';</script>
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio">JN</a>
+    <nav aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#formacao">Formação</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contatos">Contatos</a>
+    </nav>
+    <button id="menu" class="menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <button id="tema" class="tema" aria-label="Alternar entre modo escuro e claro">◐</button>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <p class="selo"><span></span> Disponível para estágio</p>
+        <p class="kicker">Estudante de Engenharia de Software · Brasília</p>
+        <h1>Olá, eu sou <span>o João</span>.</h1>
+        <p class="lead">Estudante de Engenharia de Software na UDF desde 2026, em busca do meu primeiro estágio em TI. Estou ansioso para concluir a graduação e construir minha carreira como engenheiro.</p>
+        <div class="botoes">
+          <a class="btn primario" href="#sobre">Conhecer minha história</a>
+          <a class="btn" href="#projetos">Ver projetos</a>
+        </div>
+      </div>
+      <figure class="arco">
+        <img src="img/biografia.jpg" alt="Foto de João Gabriel Fernandes Nóbrega" onerror="this.remove()">
+        <span class="arco-iniciais" aria-hidden="true"></span>
+      </figure>
+    </section>
+
+    <!-- SOBRE-->
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <div class="bio">
+        <h3>Minha história</h3>
+        <p>Nasci e fui criado no Guará. Desde pequeno, sempre tive interesse por jogos e computadores, gostava de passar meu tempo jogando e explorando o mundo da tecnologia. Naquela época, não imaginava que esse interesse poderia se transformar em algo tão importante para o meu futuro.</p>
+        <h3>O caminho até a Engenharia de Software</h3>
+        <p>Escolhi a Engenharia de Software ao perceber o crescimento constante da tecnologia e as boas oportunidades profissionais que essa área oferece. Com o incentivo dos meus pais e a inspiração de primos que também seguiram esse caminho, decidi iniciar essa jornada.
+No começo, tinha pouco conhecimento sobre programação e bastante receio de não conseguir aprender, mas resolvi dar uma oportunidade a essa nova experiência.</p>
+        <h3>Personalidade e evolução</h3>
+        <p>Com o passar do tempo, meu interesse pela programação foi crescendo. Comecei a sentir curiosidade e prazer em desenvolver projetos, mesmo os mais simples, percebendo que programar poderia ser muito mais divertido do que imaginava.
+Aprendi que o medo não deve nos impedir de tentar e que, com dedicação e persistência, podemos alcançar aquilo que desejamos. Hoje, continuo aprendendo e construindo meu caminho, sabendo que ainda tenho muito a conquistar.</p>
+      </div>
+      <div class="lateral">
+        <h3>Interesses</h3>
+        <ul><li>Programação</li><li>Minha independência financeira.</li><li>Realizar os meus sonhos.</li></ul>
+        <h3>Objetivos</h3>
+        <ul><li>Conseguir meu primeiro estágio em TI</li><li>Concluir a graduação em 2029</li></ul>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao">
+      <h2>Formação</h2>
+      <ol class="linha-tempo">
+        <li>
+          <time>2026 – 2029 (previsão)</time>
+          <h3>Bacharelado em Engenharia de Software</h3>
+          <p>Universidade do Distrito Federal (UDF), Brasília. Atualmente no 2º semestre, com conclusão prevista para dezembro de 2029.</p>
+        </li>
+        <li>
+          <time>02/2023 – 12/2025 · Concluído</time>
+          <h3>Ensino Médio</h3>
+          <p>Formado no colégio Rogacionista.</p>
+        </li>
+        <li>
+          <time>Em andamento</time>
+          <h3>Idiomas</h3>
+          <p>Inglês e espanhol em nível básico.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CURSOS E CERTIFICADOS: montados por js/data.js -->
+    <section id="cursos">
+      <h2>Cursos e certificados</h2>
+      <div id="lista-cursos" class="projetos"></div>
+    </section>
+
+    <!-- HABILIDADES e PROJETOS -->
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div id="lista-habilidades" class="grupos"></div>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <p class="lead intro-projetos">Alguns dos meus projetos estão aqui. Os outros, e o código de todos eles, ficam no meu GitHub.</p>
+      <div id="lista-projetos" class="projetos"></div>
+      <div class="botoes">
+        <a class="btn primario" href="https://github.com/jgabrielipx?tab=repositories" target="_blank" rel="noopener">Ver todos os projetos no GitHub →</a>
+      </div>
+    </section>
+
+    <section id="contatos">
+      <h2>Contatos</h2>
+      <div class="botoes">
+        <a class="btn primario" href="docs/Curriculo.pdf" download>Baixar currículo (PDF)</a>
+        <a class="btn" href="mailto:bieljoaosoares@gmail.com">bieljoaosoares@gmail.com</a>
+        <a class="btn" href="https://github.com/jgabrielipx" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-fernandes-n%C3%B3brega-6a3601283/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">© <span id="ano"></span> João Gabriel Fernandes Nóbrega. Feito à mão com HTML, CSS e JavaScript.</footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+ 
