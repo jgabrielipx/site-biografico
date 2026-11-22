@@ -1,14 +1,14 @@
 :root{
   --bg:#0f1724; --surface:#17212f; --line:#2a3748;
   --text:#eef0f2; --muted:#9aa7b6;
-  --accent:#f2b705; --on-accent:#0f1724; --sky:#6db3f2;
+  --accent:#f2b705; --on-accent:#0f1724; --sky:#6db3f2; --ok:#3ecf8e;
   --display:'Bricolage Grotesque',system-ui,sans-serif;
   --body:'Source Serif 4',Georgia,serif;
 }
 [data-theme="light"]{
   --bg:#eef1f4; --surface:#ffffff; --line:#d3d9e1;
   --text:#121a26; --muted:#55637a;
-  --accent:#a87400; --on-accent:#ffffff; --sky:#1f6fb5;
+  --accent:#a87400; --on-accent:#ffffff; --sky:#1f6fb5; --ok:#0f7a4a;
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:5rem}
@@ -101,3 +101,57 @@ h1 span{display:block}
 .links{display:flex;flex-wrap:wrap;gap:1.2rem}
 .selo{display:inline-flex;align-items:center;gap:.5rem;padding:.3rem .9rem;border:1px solid var(--line);border-radius:2rem;font:600 .85rem var(--display);margin-bottom:1.2rem}
 .selo span{width:.55rem;height:.55rem;border-radius:50%;background:#3ecf8e}
+
+.stack{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem}
+.stack li{padding:.25rem .8rem;border:1px solid var(--line);border-radius:2rem;font:600 .9rem var(--display)}
+.codigo{background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:1rem 1.2rem;overflow-x:auto;font:.9rem/1.6 ui-monospace,Consolas,monospace;margin-top:1.5rem}
+.status{align-self:flex-start;font:700 .8rem var(--display);color:var(--accent);border:1px solid var(--accent);border-radius:2rem;padding:.1rem .7rem;margin:.6rem 0}
+.projeto h4{font-size:.95rem;margin:.8rem 0 .3rem}
+.aprendi{padding-left:1.1rem;color:var(--muted);font-size:.95rem}
+.selo-curso{width:7rem;height:auto;margin-bottom:1rem;align-self:flex-start}
+
+/* ---------- Projetos: cards com ilustração ---------- */
+.dest{color:var(--accent)}
+.card-projeto{background:var(--surface);border:1px solid var(--line);border-radius:.8rem;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,transform .2s}
+.card-projeto:hover{border-color:var(--accent);transform:translateY(-4px)}
+.capa{position:relative;height:9rem;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 7%,var(--bg));border-bottom:1px solid var(--line)}
+.capa .n{position:absolute;top:.7rem;left:.9rem;font:600 .8rem var(--display);color:var(--muted)}
+.capa svg{width:70%;height:75%}
+.capa .l{fill:none;stroke:var(--muted);stroke-width:3}
+.capa .b{stroke:var(--accent)}
+.capa .m{fill:var(--line)}
+.capa .a,.capa circle{fill:var(--accent)}
+.capa .num{font:800 2.6rem ui-monospace,Consolas,monospace;color:var(--accent);letter-spacing:.12em;text-align:center;line-height:1}
+.capa .num small{display:block;font:500 .8rem ui-monospace,Consolas,monospace;color:var(--muted);letter-spacing:0;margin-top:.5rem}
+.corpo{padding:1.4rem;display:flex;flex-direction:column;flex:1}
+.cabeca{display:flex;justify-content:space-between;align-items:flex-start;gap:.8rem}
+.cabeca h3{margin:0}
+.pill{font:700 .75rem var(--display);padding:.2rem .7rem;border-radius:2rem;white-space:nowrap;background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent)}
+.pill.ok{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
+.card-projeto p{color:var(--muted);font-size:1rem;margin-top:.6rem}
+.card-projeto .tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:.9rem 0;font:600 .8rem var(--display)}
+.card-projeto .tags span{padding:.15rem .6rem;border-radius:.3rem;background:color-mix(in srgb,var(--sky) 14%,transparent);color:var(--sky)}
+.aprendi-box{border-top:1px solid var(--line);padding:.8rem 0;margin-top:auto}
+.aprendi-box summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;font:700 .9rem var(--display);color:var(--accent)}
+.aprendi-box summary::-webkit-details-marker{display:none}
+.aprendi-box summary::after{content:"+"}
+.aprendi-box[open] summary::after{content:"−"}
+.aprendi-box ul{padding-left:1.1rem;margin-top:.6rem;color:var(--muted);font-size:.95rem}
+.acoes{display:flex;gap:.6rem}
+.btn-codigo{flex:1;text-align:center;padding:.6rem 1rem;border:1px solid var(--line);border-radius:.5rem;text-decoration:none;font:700 .9rem var(--display);transition:border-color .2s}
+.btn-codigo:hover{border-color:var(--accent)}
+
+/* ---------- Contatos: cartões ---------- */
+.contatos-lista{display:grid;gap:.9rem;max-width:36rem;margin-top:2rem}
+.contato-card{display:flex;align-items:center;gap:1rem;padding:1rem 1.2rem;background:var(--surface);border:1px solid var(--line);border-radius:.8rem;text-decoration:none;transition:border-color .2s,transform .2s}
+.contato-card:hover{border-color:var(--accent);transform:translateX(4px)}
+.contato-card .ico{display:grid;place-items:center;width:3rem;height:3rem;border:1px solid var(--line);border-radius:.6rem;color:var(--accent);flex-shrink:0}
+.contato-card svg{width:1.4rem;height:1.4rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.contato-card .txt{flex:1;min-width:0;overflow-wrap:anywhere;font-weight:600}
+.contato-card small{display:block;font:700 .75rem var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.contato-card .seta{color:var(--accent);font-size:1.2rem}
+
+/* Cores do trecho de código (estilo editor) */
+.codigo::before{content:"";display:block;width:.6rem;height:.6rem;border-radius:50%;background:var(--sky);box-shadow:1rem 0 var(--sky),2rem 0 var(--sky);margin-bottom:1rem}
+.codigo .kw{color:var(--sky)}
+.codigo .str{color:var(--ok)}

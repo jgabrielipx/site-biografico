@@ -39,9 +39,12 @@
         <p class="kicker">Estudante de Engenharia de Software · Brasília</p>
         <h1>Olá, eu sou <span>o João</span>.</h1>
         <p class="lead">Estudante de Engenharia de Software na UDF desde 2026, em busca do meu primeiro estágio em TI. Estou ansioso para concluir a graduação e construir minha carreira como engenheiro.</p>
+        <ul class="stack"><li>Python</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
         <div class="botoes">
           <a class="btn primario" href="#sobre">Conhecer minha história</a>
           <a class="btn" href="#projetos">Ver projetos</a>
+          <a class="btn" href="docs/Curriculo.pdf" download>Baixar currículo</a>
+          <a class="btn" href="#contatos">Entrar em contato</a>
         </div>
       </div>
       <figure class="arco">
@@ -62,6 +65,10 @@ No começo, tinha pouco conhecimento sobre programação e bastante receio de n�
         <h3>Personalidade e evolução</h3>
         <p>Com o passar do tempo, meu interesse pela programação foi crescendo. Comecei a sentir curiosidade e prazer em desenvolver projetos, mesmo os mais simples, percebendo que programar poderia ser muito mais divertido do que imaginava.
 Aprendi que o medo não deve nos impedir de tentar e que, com dedicação e persistência, podemos alcançar aquilo que desejamos. Hoje, continuo aprendendo e construindo meu caminho, sabendo que ainda tenho muito a conquistar.</p>
+        <pre class="codigo"><code><span class="kw">class</span> Dev:
+    nome = <span class="str">"João Gabriel"</span>
+    estudando = [<span class="str">"Python"</span>, <span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JavaScript"</span>]
+    objetivo = <span class="str">"Estágio em desenvolvimento de software"</span></code></pre>
       </div>
       <div class="lateral">
         <h3>Interesses</h3>
@@ -106,8 +113,9 @@ Aprendi que o medo não deve nos impedir de tentar e que, com dedicação e pers
     </section>
 
     <section id="projetos">
-      <h2>Projetos</h2>
-      <p class="lead intro-projetos">Alguns dos meus projetos estão aqui. Os outros, e o código de todos eles, ficam no meu GitHub.</p>
+      <p class="kicker">Projetos</p>
+      <h2>O que eu já <span class="dest">desenvolvi.</span></h2>
+      <p class="lead intro-projetos">Projetos feitos durante meus estudos. O código de todos eles está aberto no meu GitHub.</p>
       <div id="lista-projetos" class="projetos"></div>
       <div class="botoes">
         <a class="btn primario" href="https://github.com/jgabrielipx?tab=repositories" target="_blank" rel="noopener">Ver todos os projetos no GitHub →</a>
@@ -116,11 +124,28 @@ Aprendi que o medo não deve nos impedir de tentar e que, com dedicação e pers
 
     <section id="contatos">
       <h2>Contatos</h2>
-      <div class="botoes">
-        <a class="btn primario" href="docs/Curriculo.pdf" download>Baixar currículo (PDF)</a>
-        <a class="btn" href="mailto:bieljoaosoares@gmail.com">bieljoaosoares@gmail.com</a>
-        <a class="btn" href="https://github.com/jgabrielipx" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-fernandes-n%C3%B3brega-6a3601283/" target="_blank" rel="noopener">LinkedIn</a>
+      <p class="lead">Estou em busca de um estágio em desenvolvimento de software. Se o meu perfil combina com a sua vaga, fale comigo por um destes canais.</p>
+      <div class="contatos-lista">
+        <a class="contato-card" href="docs/Curriculo.pdf" download>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg></span>
+          <span class="txt"><small>Currículo</small>Baixar em PDF</span>
+          <span class="seta" aria-hidden="true">↓</span>
+        </a>
+        <a class="contato-card" href="mailto:bieljoaosoares@gmail.com">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+          <span class="txt"><small>E-mail</small>bieljoaosoares@gmail.com</span>
+          <span class="seta" aria-hidden="true">↗</span>
+        </a>
+        <a class="contato-card" href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-fernandes-n%C3%B3brega-6a3601283/" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></span>
+          <span class="txt"><small>LinkedIn</small>Meu perfil profissional</span>
+          <span class="seta" aria-hidden="true">↗</span>
+        </a>
+        <a class="contato-card" href="https://github.com/jgabrielipx" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></span>
+          <span class="txt"><small>GitHub</small>Meu perfil no GitHub</span>
+          <span class="seta" aria-hidden="true">↗</span>
+        </a>
       </div>
     </section>
   </main>
@@ -130,4 +155,3 @@ Aprendi que o medo não deve nos impedir de tentar e que, com dedicação e pers
   <script src="js/main.js"></script>
 </body>
 </html>
- 
